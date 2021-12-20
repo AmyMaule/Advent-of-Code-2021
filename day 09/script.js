@@ -49,3 +49,60 @@ fetch(inputTxt)
 
 
   }
+
+
+  // const part2 = (input, rowLength) => {
+  //   // console.log(rowLength);
+  //   let largestBasins = new Set();
+
+  //   let basins = {}
+
+  //   // check every number
+  //     // if it is not 9:
+  //       // if it has no lower neighbours, add currentnum: 1 to basins object
+  //       // if it has a lower neighbour, store currentnum, let i = lower neighbour's i and run a loop until the lowest number is found, then add 1 to lowestneighbour in basins object
+
+  //   input.forEach((num, i) => {
+  //     if (num !== 9) {
+  //       // let currentNum = i;
+
+  //       let counter = 0;
+  //       for (let j = 0; j < 4; j++) {
+  //         // as in part 1, num is either in the middle, on the left edge or on the right edge, so add the corresponding values to adjacentNums
+  //         let adjacentNums = [i-rowLength, i+rowLength];
+  //         if (i % rowLength === 0) {
+  //           // add i as length must be 4 but as only smaller numbers are added to counter, it doesn't matter
+  //           adjacentNums.push(i+1, i);
+  //           counter++;
+  //         } else if (i % rowLength === rowLength-1) {
+  //           adjacentNums.push(i-1, i);
+  //           counter++;
+  //         } else adjacentNums.push(i-1, i+1);
+
+
+  //         if (input[adjacentNums[j]] < num) {
+  //           console.log(num, input[adjacentNums[j]]);
+  //           num = input[adjacentNums[j]];
+  //           console.log(num, input[adjacentNums[j]]);
+  //           j = -1;
+  //           counter = 0;
+  //           continue;
+  //         } else {
+  //           if (adjacentNums[j] < 0 || adjacentNums[j] > input.length-1 || num < input[adjacentNums[j]]) counter++;
+  //         }
+  //         if (counter === 4) {
+  //           // console.log(input[i], num);
+  //           // basins[i] = basins[i] ? basins[i]++ : 1;
+  //         }
+  //       }
+  //       num = input[i];
+  //     }
+  //   })
+  //   console.log(basins);
+  // }
+
+// 2199943210
+// 3987894921
+// 9856789892
+// 8767896789
+// 9899965678
